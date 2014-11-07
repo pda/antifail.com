@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euxo pipefail
+
+# http://aws.amazon.com/cli/
+# brew install awscli
+
+aws s3 sync \
+  --recursive \
+  --exclude='.*' \
+  --acl=public-read \
+  --storage-class=REDUCED_REDUNDANCY \
+  --delete \
+  public \
+  s3://antifail.com
