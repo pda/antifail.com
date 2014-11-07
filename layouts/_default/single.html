@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+<a href="/" class="home-link" title="antifail home">◀︎</a>
+
+<div class="pattern-strip pattern-strip-top"></div>
+
+<header class="dark">
+  <h1 class="main-heading">{{ .Title }}</h1>
+</header>
+
+<section class="page main-column">
+  <div class="content">
+  {{ .Content }}
+  </div>
+  </article>
+</section>
+
+<footer class="dark">
+  <div class="page main-column">
+    <p>Paul Annesley, {{ .Date.Format "2 January 2006" }}</p>
+    <ul>
+      <li><a href="/">antifail home, more posts</a></li>
+      <li><a href="https://twitter.com/pda">pda on Twitter</a></li>
+      <li><a href="https://github.com/pda">pda on Github</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="pattern-strip pattern-strip-bottom"></div>
+
+{{ partial "footer.html" . }}

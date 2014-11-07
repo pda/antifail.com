@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+<div class="pattern-strip pattern-strip-top"></div>
+
+<header class="dark">
+  <h1 class="main-heading">antifail</h1>
+  <h2 class="subheading">Paul Annesley</h2>
+</header>
+
+<section class="page main-column">
+<ol class="post-list">
+{{ range .Data.Pages }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+  </li>
+{{ end }}
+</ol>
+</section>
+
+<footer class="dark">
+  <div class="page main-column">
+    <ul>
+      <li><a href="https://twitter.com/pda">pda on Twitter</a></li>
+      <li><a href="https://github.com/pda">pda on Github</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="pattern-strip pattern-strip-bottom"></div>
+
+{{ partial "footer.html" . }}

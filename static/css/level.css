@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Lustria", serif;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.page {
+  flex: 1;
+  padding: 1em;
+}
+
+p {
+  line-height: 180%;
+}
+
+code {
+  font-family: Inconsolata, sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+*:not(pre) > code {
+  padding: 0.1em 0.4em;
+}
+
+pre > code {
+  display: block;
+  font-size: 80%;
+  padding: 1em;
+  overflow: auto;
+}
+
+
+blockquote {
+  border-left: 10px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 0;
+  padding: 0px 1em;
+}
+
+.main-column {
+  max-width: 40em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 64px 0 32px 0;
+  text-align: center;
+  border-bottom: 8px solid #202030;
+}
+
+footer {
+  background-color: #d0d0d0;
+  padding: 2em 0;
+}
+
+.dark {
+  background-color: #0c0c18;
+  color: #8c8ca0;
+}
+
+.dark a, .dark a:visited {
+  color: #8c8ca0;
+}
+
+.main-heading {
+  font-size: 3em;
+}
+
+.subheading {
+  text-transform: lowercase;
+}
+
+.pattern-strip {
+  /**
+   * Floral pattern image credit:
+   * http://www.colourlovers.com/pattern/3532524/Blames_On_You
+   * by http://www.colourlovers.com/lover/Rockinfreakapotamus
+   * and http://www.colourlovers.com/lover/FrommeDesigner
+   */
+  background-image: url(/images/pattern.png);
+  height: 32px;
+  width: 100%;
+}
+
+.pattern-strip-top {
+  border-bottom: 1px solid rgba(87, 62, 96, 0.5);
+}
+
+.pattern-strip-bottom {
+  border-top: 1px solid rgba(87, 62, 96, 0.5);
+}
+
+.post-list {
+  list-style-type: none;
+  font-size: 150%;
+}
+
+.post-list li {
+  margin: 2em 0;
+}
+
+.post-list time {
+  color: #808080;
+  white-space: nowrap;
+}
+
+.post-list time:before {
+  content: " — ";
+}
+
+.home-link {
+  position: absolute;
+  padding: 32px;
+  padding-top: 128px;
+  color: #8c8ca0;
+  text-decoration: none;
+  font-size: 400%;
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+.home-link:hover {
+  opacity: 1;
+}
