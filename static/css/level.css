@@ -59,6 +59,17 @@ header {
 footer {
   background-color: #d0d0d0;
   padding: 2em 0;
+  text-align: center;
+}
+
+.link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list li {
+  margin: 0.5em 0;
 }
 
 .dark {
@@ -72,6 +83,7 @@ footer {
 
 .main-heading {
   font-size: 3em;
+  margin: 0.2em;
 }
 
 .subheading {
@@ -119,7 +131,7 @@ footer {
 .home-link {
   position: absolute;
   padding: 32px;
-  padding-top: 128px;
+  padding-top: 96px;
   color: #8c8ca0;
   text-decoration: none;
   font-size: 400%;
